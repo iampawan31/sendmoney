@@ -31,6 +31,6 @@ class WalletTest extends TestCase
 
         $this->getJson(route('api.user.wallet.details'))
             ->assertStatus(200)
-            ->assertJsonCount(1);
+            ->assertJsonCount(2);
     }
 }
